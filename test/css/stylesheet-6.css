@@ -1,0 +1,154 @@
+.width {
+    width: 87%;
+    margin: auto;
+}
+
+/* for the content within the class;'layout__region--first' to take up the right proportion of the screen */
+.width3 {
+    width: 115rem;
+}
+
+.section {
+    margin-bottom: 100px;
+}
+
+.head {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.head2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.head3 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.text{
+    width: 100%;
+    font-size: 16px;
+}
+
+.text1{
+    width: 700px;
+    font-size: 20px;
+}
+
+.section p:nth-child(4){
+    margin: 0px 0px 30px 80px;
+}
+
+.section button {
+    border: 1px solid white;
+    background: skyblue;
+    width: 200px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
+
+}
+
+.vertical {
+    display: block;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    border-left: 2px solid  rgba(0,0,0,0.3);
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+/* giving it a position and centering the elements */
+.part1 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+
+}
+
+.part2 {
+    position: relative;
+    right: 20%;
+    top: 70px;
+    text-align: center;
+}
+
+.color1 {
+    letter-spacing: -5px;
+    color: darkblue;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.color2 {
+    letter-spacing: -10px;
+    color: darkorange;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.block-title {
+    text-align: center;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+/* aligning the profile images */
+.align{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 10%;
+    justify-content: space-between;
+}
+
+.remove {
+    display: none;
+}
+
+
+@media (max-width:720px){
+    .width {
+        width: 100%;
+    }
+
+    .section1 {
+        flex-direction: column;
+   
+    
+    }
+
+    #navbar {
+        width: 100vw;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .part2 {
+        right: 0%;
+    }
+    
+    .width3, .section {
+        width: 100vw;
+    }
+
+    .remove {
+        display: block;
+    }
+}
